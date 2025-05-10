@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin dashboard for SEACET chatbot and analytics.">
+    <title>Admin Dashboard - SEACET</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtvSPPBPjH-CitOzYAfCd-dxpzGY-piGM8lA&s" alt="SEACET Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="placements.html">Placements</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="student-portal.html">Student Portal</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+    <main>
+        <section class="admin-login card">
+            <h1>Admin Login</h1>
+            <div id="login-form">
+                <input type="text" id="admin-username" placeholder="Username" aria-label="Admin username">
+                <input type="password" id="admin-password" placeholder="Password" aria-label="Admin password">
+                <button type="button" onclick="adminLogin()">Login</button>
+            </div>
+            <div id="admin-content" style="display: none;">
+                <h2>Chatbot Analytics</h2>
+                <canvas id="query-chart"></canvas>
+                <h2>Manage Chatbot Responses</h2>
+                <form id="response-form">
+                    <label for="query-pattern">Query Pattern:</label>
+                    <input type="text" id="query-pattern" placeholder="e.g., internship opportunities" required>
+                    <label for="response-text">Response:</label>
+                    <textarea id="response-text" placeholder="e.g., Check our internships page..." required></textarea>
+                    <button type="submit">Add Response</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: Ekta Nagar, Basavanapura, K.R. Puram, Bangalore, Karnataka, 560049</p>
+        <p>Email: principal.seacet@gmail.com | Phone: 080-29730681</p>
+    </footer>
+    <script src="js/admin.js"></script>
+</body>
+</html>

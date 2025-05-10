@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore internship opportunities at SEACET for engineering students.">
+    <meta property="og:title" content="SEACET - Internships">
+    <meta property="og:description" content="Find internships in AI, CS, and more at SEACET.">
+    <title>Internships - SEACET</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtvSPPBPjH-CitOzYAfCd-dxpzGY-piGM8lA&s" alt="SEACET Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="placements.html">Placements</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="student-portal.html">Student Portal</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+    <main>
+        <section class="internships card">
+            <h1>Internship Opportunities</h1>
+            <p>Explore internships to gain real-world experience and boost your career.</p>
+            <div class="filter-container">
+                <label for="domain-filter">Filter by Domain:</label>
+                <select id="domain-filter" aria-label="Filter internships by domain">
+                    <option value="all">All</option>
+                    <option value="AI">AI & Data Science</option>
+                    <option value="CS">Computer Science</option>
+                    <option value="ECE">Electronics & Communication</option>
+                    <option value="ME">Mechanical Engineering</option>
+                </select>
+            </div>
+            <table id="internship-table">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Role</th>
+                        <th>Domain</th>
+                        <th>Eligibility</th>
+                        <th>Apply</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <h2>Success Stories</h2>
+            <div class="success-stories">
+                <div class="story">
+                    <p>"I secured an AI internship at Infosys through SEACET's portal, which helped me apply my classroom knowledge to real projects!" - Priya Sharma, AI & DS</p>
+                </div>
+                <div class="story">
+                    <p>"The internship portal made it easy to find opportunities in CS. I interned at TCS and got a PPO!" - Rahul Kumar, CS</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="chatbot" class="chatbot-hidden">
+        <div id="chat-header">
+            <img src="https://media.istockphoto.com/id/1329751110/vector/chatbot-concept-dialogue-help-service.jpg?s=612x612&w=0&k=20&c=5aLsLEghDrDRjZ_bu-kAaSLU5dVv56g688HlCtR_TYA=" alt="Bot Avatar" class="bot-avatar"> AI Chatbot
+            <span id="chat-toggle">−</span>
+        </div>
+        <div id="chat-body"></div>
+        <div id="quick-replies">
+            <button class="quick-reply" data-query="courses">Courses</button>
+            <button class="quick-reply" data-query="fees">Fees</button>
+            <button class="quick-reply" data-query="admissions">Admissions</button>
+            <button class="quick-reply" data-query="placements">Placements</button>
+            <button class="quick-reply" data-query="internships">Internships</button>
+        </div>
+        <div class="chat-input-container">
+            <div id="suggestions"></div>
+            <div class="input-button-row">
+                <select id="language-select" aria-label="Select language">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="kn">Kannada</option>
+                </select>
+                <input type="text" id="chat-input" placeholder="Type your query..." aria-label="Chat input">
+                <button id="chat-send-btn" aria-label="Send message">➤</button>
+                <button id="clear-chat-btn" aria-label="Clear chat history">🗑️</button>
+            </div>
+            <div class="feedback-container">
+                <label for="feedback-input">Feedback:</label>
+                <input type="text" id="feedback-input" placeholder="Rate or suggest improvements...">
+                <button id="feedback-submit" aria-label="Submit feedback">Submit</button>
+            </div>
+        </div>
+    </div>
+    <button id="chatbot-toggle" class="pulse" aria-label="Toggle chatbot">💬</button>
+    <footer>
+        <p>Contact: Ekta Nagar, Basavanapura, K.R. Puram, Bangalore, Karnataka, 560049</p>
+        <p>Email: principal.seacet@gmail.com | Phone: 080-29730681</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/next-word-predictor.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/internships.js"></script>
+</body>
+</html>

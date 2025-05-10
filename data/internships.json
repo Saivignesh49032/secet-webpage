@@ -1,0 +1,30 @@
+[
+    {
+        "company": "Infosys",
+        "role": "Data Scientist Intern",
+        "domain": "AI",
+        "eligibility": "3rd/4th year AI & DS students, CGPA > 7.0",
+        "applyLink": "https://www.infosys.com/careers.html"
+    },
+    {
+        "company": "TCS",
+        "role": "Software Engineer Intern",
+        "domain": "CS",
+        "eligibility": "3rd/4th year CS students, CGPA > 6.5",
+        "applyLink": "https://www.tcs.com/careers"
+    },
+    {
+        "company": "Wipro",
+        "role": "Embedded Systems Intern",
+        "domain": "ECE",
+        "eligibility": "3rd/4th year ECE students, CGPA > 6.8",
+        "applyLink": "https://careers.wipro.com"
+    },
+    {
+        "company": "Accenture",
+        "role": "Mechanical Design Intern",
+        "domain": "ME",
+        "eligibility": "3rd/4th year ME students, CGPA > 7.0",
+        "applyLink": "https://www.accenture.com/in-en/careers"
+    }
+]

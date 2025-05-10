@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="S.E.A College of Engineering and Technology - Empowering future engineers with innovation and knowledge.">
+    <meta property="og:title" content="SEACET - Home">
+    <meta property="og:description" content="Explore courses, admissions, placements, and internships at SEACET.">
+    <meta property="og:image" content="https://seacet.edu.in/images/clgbldg.jpg">
+    <title>S.E.A College of Engineering and Technology</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollegeOrUniversity",
+        "name": "S.E.A College of Engineering and Technology",
+        "url": "https://seacet.edu.in",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ekta Nagar, Basavanapura, K.R. Puram",
+            "addressLocality": "Bangalore",
+            "addressRegion": "Karnataka",
+            "postalCode": "560049",
+            "addressCountry": "IN"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtvSPPBPjH-CitOzYAfCd-dxpzGY-piGM8lA&s" alt="SEACET Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="placements.html">Placements</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="student-portal.html">Student Portal</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+    <main>
+        <img src="https://seacet.edu.in/images/clgbldg.jpg" alt="SEACET College Building" class="college-building" loading="lazy">
+        <section class="virtual-tour card">
+            <h2>Virtual Campus Tour</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <img src="https://via.placeholder.com/800x400?text=Campus+1" alt="Campus View 1" class="carousel-item active">
+                    <img src="https://via.placeholder.com/800x400?text=Campus+2" alt="Campus View 2" class="carousel-item">
+                    <img src="https://via.placeholder.com/800x400?text=Campus+3" alt="Campus View 3" class="carousel-item">
+                </div>
+                <button class="carousel-control prev" aria-label="Previous slide">❮</button>
+                <button class="carousel-control next" aria-label="Next slide">❯</button>
+            </div>
+        </section>
+        <section class="courses card">
+            <h2>Our Courses</h2>
+            <div class="course-grid">
+                <div class="course-item">AI & Data Science</div>
+                <div class="course-item">Computer Science</div>
+                <div class="course-item">Electronics & Communication</div>
+                <div class="course-item">Mechanical Engineering</div>
+            </div>
+        </section>
+    </main>
+    <div id="chatbot" class="chatbot-hidden">
+        <div id="chat-header">
+            <img src="https://media.istockphoto.com/id/1329751110/vector/chatbot-concept-dialogue-help-service.jpg?s=612x612&w=0&k=20&c=5aLsLEghDrDRjZ_bu-kAaSLU5dVv56g688HlCtR_TYA=" alt="Bot Avatar" class="bot-avatar"> AI Chatbot
+            <span id="chat-toggle">−</span>
+        </div>
+        <div id="chat-body"></div>
+        <div id="quick-replies">
+            <button class="quick-reply" data-query="courses">Courses</button>
+            <button class="quick-reply" data-query="fees">Fees</button>
+            <button class="quick-reply" data-query="admissions">Admissions</button>
+            <button class="quick-reply" data-query="placements">Placements</button>
+            <button class="quick-reply" data-query="internships">Internships</button>
+            <button class="quick-reply" data-query="about us">About Us</button>
+        </div>
+        <div class="chat-input-container">
+            <div id="suggestions"></div>
+            <div class="input-button-row">
+                <input type="text" id="chat-input" placeholder="Type your query..." aria-label="Chat input">
+                <button id="chat-send-btn" aria-label="Send message">➤</button>
+                <button id="clear-chat-btn" aria-label="Clear chat history">🗑️</button>
+            </div>
+            <div class="feedback-container">
+                <label for="feedback-input">Feedback:</label>
+                <input type="text" id="feedback-input" placeholder="Rate or suggest improvements...">
+                <button id="feedback-submit" aria-label="Submit feedback">Submit</button>
+            </div>
+        </div>
+    </div>
+    <button id="chatbot-toggle" class="pulse" aria-label="Toggle chatbot">💬</button>
+    <footer>
+        <p>Contact: Ekta Nagar, Basavanapura, K.R. Puram, Bangalore, Karnataka, 560049</p>
+        <p>Email: principal.seacet@gmail.com | Phone: 080-29730681</p>
+        <div class="social-media">
+            <a href="https://facebook.com" aria-label="Facebook"><img src="https://via.placeholder.com/24?text=FB" alt="Facebook"></a>
+            <a href="https://twitter.com" aria-label="Twitter"><img src="https://via.placeholder.com/24?text=TW" alt="Twitter"></a>
+            <a href="https://linkedin.com" aria-label="LinkedIn"><img src="https://via.placeholder.com/24?text=LI" alt="LinkedIn"></a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/next-word-predictor.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

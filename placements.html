@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placements - SEACET</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtvSPPBPjH-CitOzYAfCd-dxpzGY-piGM8lA&s" alt="SEACET Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="placements.html">Placements</a></li>
+                <li><a href="student-portal.html">Student Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="placements card">
+            <h1>Placements</h1>
+            <p>SEACET has a dedicated placement cell to ensure our students secure top opportunities.</p>
+            <h2>Top Recruiters</h2>
+            <ul>
+                <li>Infosys</li>
+                <li>TCS</li>
+                <li>Wipro</li>
+                <li>Accenture</li>
+            </ul>
+            <h2>Placement Statistics</h2>
+            <p>Over 90% placement rate for the 2024 batch.</p>
+        </section>
+    </main>
+    <div id="chatbot" class="chatbot-hidden">
+        <div id="chat-header">
+            <img src="https://media.istockphoto.com/id/1329751110/vector/chatbot-concept-dialogue-help-service.jpg?s=612x612&w=0&k=20&c=5aLsLEghDrDRjZ_bu-kAaSLU5dVv56g688HlCtR_TYA=" alt="Bot Avatar" class="bot-avatar"> AI Chatbot
+            <span id="chat-toggle">−</span>
+        </div>
+        <div id="chat-body"></div>
+        <div id="quick-replies">
+            <button class="quick-reply" data-query="courses">Courses</button>
+            <button class="quick-reply" data-query="fees">Fees</button>
+            <button class="quick-reply" data-query="admissions">Admissions</button>
+            <button class="quick-reply" data-query="placements">Placements</button>
+        </div>
+        <div class="chat-input-container">
+            <div id="suggestions"></div>
+            <div class="input-button-row">
+                <input type="text" id="chat-input" placeholder="Type your query...">
+                <button id="chat-send-btn">➤</button>
+                <button id="clear-chat-btn">🗑️</button>
+            </div>
+        </div>
+    </div>
+    <button id="chatbot-toggle" class="pulse">💬</button>
+    <footer>
+        <p>Contact: Ekta Nagar, Basavanapura, K.R. Puram, Bangalore, Karnataka, 560049</p>
+        <p>Email: principal.seacet@gmail.com | Phone: 080-29730681</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/next-word-predictor.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
